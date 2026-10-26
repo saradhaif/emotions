@@ -9,7 +9,7 @@ st.write("Upload a picture to get a prediction.")
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("model.keras")
+    return tf.keras.models.load_model("model.tflite")
 
 model = load_model()
 
